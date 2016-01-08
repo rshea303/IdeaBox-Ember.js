@@ -1,8 +1,11 @@
 <div class="container">
 
-  <heading>
+  <header>
     <h1>IdeaBox</h1>
-  </heading>
+    {{#link-to 'about'}}About{{/link-to}}
+    {{#link-to 'contact'}}Contact Us{{/link-to}}
+    <p>{{#link-to 'ideas'}}Home{{/link-to}}</p>
+  </header>
 
 {{outlet}}
 

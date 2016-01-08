@@ -7,6 +7,8 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('ideas', { path: '/' });
+  this.route('about');
+  this.route('contact', { path: '/contact_us'})
 });
 
 export default Router;
