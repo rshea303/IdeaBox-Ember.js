@@ -1,0 +1,19 @@
+<section id="new-idea">
+  <h2>Add a New Idea</h2>
+  <form class="new-idea-form">
+    <label>Title</label>
+    {{input type="text" placeholder="Title" class="new-idea-title" value=title }}
+    <label>Body</label>
+    {{input type="text" placeholder="Body" class="new-idea-body" value=body }}
+    <input type="submit" value="Submit your great idea" {{action 'addNewIdea'}}>
+  </form>
+</section>
+
+<section id="ideas">
+  {{#each model as |idea|}}
+  <div class="idea">
+    <h2>{{idea.title}}</h2>
+    <p>{{idea.body}}</p>
+  </div>
+  {{/each}}
+</section>
